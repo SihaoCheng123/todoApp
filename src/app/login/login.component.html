@@ -1,0 +1,23 @@
+<div id="divPadre" class="bg-secondary text-white">
+    <div id="divIcono" class="bg-secondary text-white d-flex justify-content-center">
+        <i class="bi bi-calendar-heart"></i>
+    </div>
+    <form class="bg-white text-dark d-flex flex-column justify-content-center px-5 py-5">
+        <h3 class="text-black h2 text-center">Login</h3>
+        <div class="d-flex flex-column justify-content-center shadow p-3 mt-4 mb-5 bg-white rounded-4">
+            <label for="user" class="py-1">Username</label>
+            <input type="text" placeholder="username123" id="user" class="border-0 opacity-50">
+        </div>
+        <div class="d-flex flex-column justify-content-center shadow p-3 mb-5 bg-white rounded-4">
+            <label for="password" class="py-1">Password</label>
+            <input type="password" placeholder="password123." id="password" class="border-0 opacity-50">
+        </div>
+
+        <button type="button" class="text-center m-auto bg-secondary text-white text-center rounded-4 border-0 shadow" (click)="goHome()">Login</button>
+
+        <div class="d-flex text-center justify-content-center mt-5">
+            <p>Don't have any account? <span class="text-decoration-underline">Sign up</span></p>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,29 @@
+nav{
+
+  button{
+    height: auto;
+    position: relative;
+    top: 35px;
+    z-index: 999;
+    font-size: 60px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 3px 2px 2px #888888;
+    opacity: 0.9;
+    i{
+      color: #363636;
+    }
+  }
+  div{
+    position: relative;
+    height: fit-content;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    i{
+      font-size: 48px;
+      &#calendar, &#task{
+        font-size: 45px;
+      }
+    }
+  }
+}
