@@ -2,6 +2,7 @@ main{
   width: 100%;
   height: 100%;
   font-family: "fangsong";
+  overflow:auto;
 
   #section1{
     width: 100%;
@@ -14,12 +15,17 @@ main{
   #section2{
     border-radius: 100px 0 0 0;
 
-    #tareasTotales{
+    #allTareas{
+      width: 100%;
 
-      #cantidadTareas{
-
+      #cadaTarea{
+        width: 85%;
+        i{
+          font-size: 35px;
+        }
       }
     }
+
   }
 }
 

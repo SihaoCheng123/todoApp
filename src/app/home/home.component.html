@@ -9,11 +9,19 @@
     <section id="section2" class="bg-white py-3 px-3">
         <div id="tareasTotales" class="row py-4 d-flex justify-content-evenly align-items-center">
             <p id="cantidadTareas" class=" h3 mx-5 col-2 py-3 border-3 text-white bg-secondary text-center rounded-4">5</p>
-            <p class="col-7 h5 text-black-50">Tareas pendientes:</p>
+            <p class="col-6 h5 text-black-50">Tareas pendientes:</p>
         </div>
         <div>
-            <div id="allTareas" class="d-flex flex-column align-items-center justify-content-center">
+            <div id="allTareas" class="d-flex flex-column align-items-center justify-content-center" *ngIf="totalTareas.length > 0">
+                <div id="cadaTarea" class="row shadow border-5 rounded-3 h-100 d-flex flex-row justify-content-center align-items-center m-3" *ngFor="let tarea of totalTareas">
+                    <i class="{{tarea.icono}} col-2 ps-3"></i>
+                    <div class="col-8 text-start d-flex flex-column m-0 px-3">
+                        <h4 class="pt-2 h4">{{tarea.nombreTarea}}</h4>
+                        <p class="h5 text-black-50">{{tarea.tiempo}}</p>
+                    </div>
+                    <i class="{{tarea.puntosAjuste}} col-2 text-black-50"></i>
 
+                </div>
             </div>
         </div>
     </section>
