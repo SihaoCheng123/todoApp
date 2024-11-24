@@ -1,4 +1,26 @@
-
+<main class="bg-secondary mh-100">
+    <section id="section1" class="d-flex align-items-center justify-content-center mb-0">
+        <h3 class="text-white text-center">Create routine</h3>
+    </section>
+    <section id="section2" class="bg-white" *ngIf="diasSemana.length>0">
+        <div id="tareasTotales" class="p-0" *ngFor="let dia of diasSemana">
+            <p id="cantidadTareas" class="mt-3 mx-1 py-3 bg-white shadow text-center rounded-4">{{dia.diaSemana}}</p>
+        </div>
+    </section>
+    <section id="section3" class="bg-white mt-1">
+        <h3 class="text-center mb-1 py-2">Choose activity</h3>
+        <div id="actividades" class="d-flex flex-column justify-content-center align-items-center" *ngIf="rutinas.length>0">
+            <div id="cadaActividad" class="row d-flex flex-row align-items-center shadow-lg border-5 rounded-3 my-2" *ngFor="let rutina of rutinas">
+                <i class="{{rutina.iconoRutina}} col-2"></i>
+                <div class="col-8">
+                    <h4>{{rutina.nombreRutina}}</h4>
+                    <p class="text-black-50">{{rutina.descripcionRutina}}</p>
+                </div>
+                <i class="{{rutina.iconoFlecha}} col-2"></i>
+            </div>
+        </div>
+    </section>
+</main>
 
 
 <app-nav-bar-boton></app-nav-bar-boton>

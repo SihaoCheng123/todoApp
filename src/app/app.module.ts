@@ -13,7 +13,7 @@ import { NavBarBotonComponent } from './nav-bar-boton/nav-bar-boton.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { UserComponent } from './user/user.component';
-
+import { AddBtnComponent } from './add-btn/add-btn.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +27,12 @@ import { UserComponent } from './user/user.component';
     CalendarComponent,
     ScheduleComponent,
     UserComponent,
+    AddBtnComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

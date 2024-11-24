@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {TieneBotonService} from "../services/comunicacion/tiene-boton.service";
 import {CadaTarea} from "../services/interfaces/cada-tarea";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
   private tieneBotonService: TieneBotonService,
+  private router: Router,
       ){}
 
 ngOnInit() {
@@ -25,4 +27,6 @@ ngOnInit() {
         {icono:"bi bi-square", nombreTarea: "Time to work", tiempo: "4 p.m", puntosAjuste:"bi bi-three-dots-vertical"},
         {icono:"bi bi-square", nombreTarea: "Proyect", tiempo: "8 p.m", puntosAjuste:"bi bi-three-dots-vertical"},
     ];
+
+
 }

@@ -6,6 +6,7 @@ import {HomeComponent} from "./home/home.component";
 import {CalendarComponent} from "./calendar/calendar.component";
 import {ScheduleComponent} from "./schedule/schedule.component";
 import {UserComponent} from "./user/user.component";
+import {AddBtnComponent} from "./add-btn/add-btn.component";
 
 const routes: Routes = [
   {path: "", component: LayoutSinHeaderComponent,
@@ -14,7 +15,8 @@ const routes: Routes = [
       {path:"home", component: HomeComponent},
       {path:"calendar", component: CalendarComponent},
       {path:"schedule", component: ScheduleComponent},
-      {path:"user", component: UserComponent}
+      {path:"user", component: UserComponent},
+      {path:"add", component: AddBtnComponent}
     ]
   },
   {path: "**", component: LoginComponent}

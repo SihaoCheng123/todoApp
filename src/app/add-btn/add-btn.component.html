@@ -1,0 +1,47 @@
+<header class="bg-secondary d-flex flex-row align-items-center">
+    <i class="bi bi-caret-left text-white mx-4" (click)="cambiarHome()"></i>
+    <h3 class="text-white mx-5">New</h3>
+</header>
+<main>
+    <form class="m-auto">
+        <div id="tipo" class="mt-3 m-auto">
+            <p>Task</p>
+            <p>Event</p>
+            <p>Schedule</p>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center shadow p-3 mb-2 bg-white rounded-4">
+            <label for="name" class="py-1">Name</label>
+            <input type="text" id="name" class="border-0 opacity-50" required>
+        </div>
+        <div class="d-flex flex-column justify-content-center shadow p-3 mb-2 bg-white rounded-4">
+            <label for="desc" class="py-1">Description</label>
+            <input type="text" id="desc" class="border-0 opacity-50" required>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between shadow p-3 mb-2 bg-white rounded-4">
+            <label for="fecha" class="py-1">Day</label>
+            <input type="date" id="fecha" class="border-0 opacity-50" required>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between shadow p-3 mb-2 bg-white rounded-4">
+            <label for="hora" class="py-1">Time</label>
+            <input type="time" id="hora" class="border-0 opacity-50">
+        </div>
+
+        <div class="d-flex flex-column justify-content-between shadow p-3 mb-2 bg-white rounded-4">
+            <p>Add notification</p>
+            <div class="row">
+                <label for="yes" class="col-3 px-5">Yes</label>
+                <input type="radio" id="yes" value="yes" class="col-1" name="notif">
+                <label for="no" class="col-3 px-5">No</label>
+                <input type="radio" id="no" value="no" class="col-1" name="notif">
+            </div>
+        </div>
+
+        <div class="d-flex flex-column justify-content-center">
+            <button type="button" class="text-center m-auto bg-secondary p-3 text-white text-center rounded-4 border-0 shadow">Create</button>
+        </div>
+
+    </form>
+</main>

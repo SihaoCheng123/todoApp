@@ -1,0 +1,38 @@
+main{
+  width: 100%;
+  height: 100%;
+  font-family: "fangsong";
+  overflow: auto;
+
+  #section1 {
+    width: 100%;
+    height: 10vh;
+  }
+
+  #section2 {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    #cantidadTareas{
+      border: 2px solid black;
+      color: #757de8;
+    }
+  }
+
+  #section3 {
+    width: 100%;
+
+    #actividades{
+      width: 90%;
+      margin: 0 auto;
+
+      #cadaActividad{
+        width: 100%;
+
+        i{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
